@@ -1,0 +1,8 @@
+Servlet
+
+It is used to create a web application
+it is robust and scalable
+Servlet is an API that provides many interfaces and classes
+servlet executes inside thread
+it supports multithreading
+lightweight 

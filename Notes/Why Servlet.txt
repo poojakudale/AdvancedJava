@@ -1,0 +1,19 @@
+
+CGI  - Common Gateway Interface (Script)
+perl,c,c++
+it executes inside process and for every request it creates a new process
+
+Disadvantage -
+response time is high
+platform dependant , it is not secured
+it is not scalable
+it uses type1 driver
+occupy more memory coz, it's process based
+no separation of presentation and business logic
+
+"Servlet"
+
+
+
+
+
