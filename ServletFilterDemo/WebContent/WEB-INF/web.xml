@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+ 
+ <servlet>
+ 	<servlet-name>servlet1</servlet-name>
+	<servlet-class>com.servletResource.LoginController</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>servlet1</servlet-name>
+	<url-pattern>/LoginController</url-pattern>
+ </servlet-mapping>
+ 	<filter>
+ 		<filter-name>Login</filter-name>
+ 		<filter-class>com.filterDemo.Login</filter-class>
+ 	</filter>
+ 	
+ 	<filter-mapping>
+ 		<filter-name>Login</filter-name>
+ 		<url-pattern>/LoginController</url-pattern> 
+ 	</filter-mapping>
+</web-app>
