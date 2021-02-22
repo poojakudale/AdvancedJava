@@ -1,0 +1,7 @@
+Implementing JSP Cutom Tags
+
+1. Write the tag handler class
+2. create the TLD(tag library descriptor)
+3.make the TLD file and handler class accessible
+4. reference the tag library
+5. use tag in a jsp page

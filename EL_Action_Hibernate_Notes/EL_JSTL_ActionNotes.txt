@@ -1,0 +1,27 @@
+<jsp:useBean>
+
+syntax : 
+<jsp:useBean id="bean" class="package.class"
+ type="package.class" scope="page/(session/request/application)
+beanName="package.class"
+">
+</jsp:useBean>
+
+<jsp:setProperty>
+syntax :
+<jsp:setProperty name="bean" property="property_name" value="value" />
+
+<jsp:getProperty>
+syntax :
+<jsp:getProperty name="bean" property="property_name" />
+
+Expression Language :
+
+syntax :
+
+${expression}
+
+
+
+
+

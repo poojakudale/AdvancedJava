@@ -1,0 +1,10 @@
+JSTL :  JSP Standard Tag Library
+
+Benefits / Advantages : 
+1. Standard tags
+2. it can reduces /eliminates scriplets in JSP.
+3.Code Neat and Clean
+4. Easier for humans to read
+5.It is reusable
+
+Classification
