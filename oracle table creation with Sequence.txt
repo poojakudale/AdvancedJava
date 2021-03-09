@@ -1,0 +1,35 @@
+***********Employee and Address Table Creation and Insertion***************
+
+CREATE TABLE Employee 
+(
+ emp_id int primary key,
+ emp_name varchar(20) NOT NULL, 
+ emp_salary float NOT NULL
+);
+
+SQL> create sequence Emp_Seq  start with 100 increment by 1;
+
+SQL> create table Address
+(
+emp_id int primary key,
+ Constraint empfk1 foreign key(emp_id) references Employee(emp_id),
+ address_line1 varchar(50) not null,
+  zipcode varchar(10) DEFAULT NULL,
+  City varchar(20) DEFAULT NULL
+);
+
+SQL> insert into employee values (emp_seq.nextval,'Pankaj',1000);  
+
+SQL> insert into employee values (emp_seq.nextval,'David',2000);
+
+SQL> insert into employee values (emp_seq.nextval,'Lisa',3000);
+
+SQL> select * from employee;
+
+SQL> INSERT INTO Address (emp_id, address_line1, zipcode, city) VALUES (100, 'Albany Dr’, '95129', 'San Jose');
+
+SQL> INSERT INTO Address (emp_id, address_line1, zipcode, city) VALUES (102, 'BTM 1st Stage', '560100', 'Bangalore'); 
+
+SQL> INSERT INTO Address (emp_id, address_line1, zipcode, city) VALUES (101, 'Arques Ave', '95051', 'Santa Clara');
+
+SQL> select* from Address;
